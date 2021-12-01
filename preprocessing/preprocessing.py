@@ -18,7 +18,7 @@ class DataPreProcessor:
     def __init__(self, dataframe):
         self.dataframe = dataframe
 
-    @property
+
     def removing_outliers(self, column_name):
 
         """ Description: This method removes outliers from the specified column using Inter quartile range method.
@@ -68,7 +68,7 @@ class DataPreProcessor:
             logging.info('Removing outliers unsuccessful. Exited the rem_outliers method of the '
                          'DataPreprocessor class ')
 
-    @property
+
     def data_split(self, test_size):
         """ Description: This method splits the dataframe into train and test data respectively
             using the sklearn's "train_test_split" method.
@@ -98,7 +98,7 @@ class DataPreProcessor:
             logging.info('Train test split unsuccessful. Exited the data_split method of the '
                          'DataPreProcessor class ')
 
-    @property
+
     def feature_scaling(self, df_train, df_test):
         """Description: This method scales the features of both the train and test datasets
         respectively, using the sklearn's "StandardScaler" method.
@@ -116,7 +116,7 @@ class DataPreProcessor:
             columns = df_train.columns
             scalar = StandardScaler()
             df_train = scalar.fit_transform(df_train)
-            df_test = scalar.trandform(df_test)
+            df_test = scalar.transform(df_test)
 
             # logging operation
 
@@ -135,8 +135,8 @@ class DataPreProcessor:
             logging.info('Feature scaling unsuccessful. Exited the feature_scaling method of the '
                          'DataPreProcessor class ')
 
-    @property
-    def train_test_splitting(self, df_train, df_test, column_name):
+
+    def train_test_splitting(df_train, df_test, column_name):
         """Description: This method splits the data into dependent and independent variables respectively
         i.e., X and y.
         Raises an exception if it fails
@@ -161,9 +161,9 @@ class DataPreProcessor:
             y_test = df_test[column_name]
 
             # logging operation
-            logging.info(f'Splitting data into X and y is successful. Shapes of X_train is {x_train.shape},'
+            logging.info(f'Splitting data into X and y is successful. Shapes of X_train is {X_train.shape},'
                          f'y_train is {y_train.shape}, '
-                         f'X_test is {x_test.shape} & '
+                         f'X_test is {X_test.shape} & '
                          f'the y_test is {y_test.shape}')
             logging.info('Exited the train_test_splitting method of DataPreProcessor class')
 

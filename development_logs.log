@@ -1,0 +1,87 @@
+INFO:2021-11-23 17:22:29,972:Entered the "fetch_data" method of the "DataLoad" class.
+ERROR:2021-11-23 17:22:29,972:Exception occurred in fetch_data method of the DataLoad class. Exception message:Invalid file path or buffer object type: <class 'list'>
+INFO:2021-11-23 17:22:29,973:Data fetching unsuccessful.Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:22:54,729:Entered the "fetch_data" method of the "DataLoad" class.
+ERROR:2021-11-23 17:22:54,730:Exception occurred in fetch_data method of the DataLoad class. Exception message:Invalid file path or buffer object type: <class 'list'>
+INFO:2021-11-23 17:22:54,734:Data fetching unsuccessful.Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:25:12,661:Entered the "fetch_data" method of the "DataLoad" class.
+ERROR:2021-11-23 17:25:12,661:Exception occurred in fetch_data method of the DataLoad class. Exception message:Invalid file path or buffer object type: <class 'list'>
+INFO:2021-11-23 17:25:12,661:Data fetching unsuccessful.Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:25:24,687:Entered the "fetch_data" method of the "DataLoad" class.
+ERROR:2021-11-23 17:25:24,688:Exception occurred in fetch_data method of the DataLoad class. Exception message:Invalid file path or buffer object type: <class 'list'>
+INFO:2021-11-23 17:25:24,688:Data fetching unsuccessful.Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:25:47,938:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:25:47,962:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:25:47,963:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:26:07,559:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:26:07,571:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:26:07,571:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:33:11,998:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:33:12,014:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:33:12,014:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:34:35,984:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:34:35,996:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:34:35,997:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:34:35,997:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:34:36,007:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:34:36,007:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:35:33,150:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:35:33,163:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:35:33,163:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:35:33,163:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:35:33,164:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:35:33,164:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:35:33,164:Entered the feature_scaling method of the DataPreprocessor class
+ERROR:2021-11-23 17:35:33,166:Exception occurred in feature_scaling method of the DataPreProcessor class. Exception message:could not convert string to float: 'Female'
+INFO:2021-11-23 17:35:33,166:Feature scaling unsuccessful. Exited the feature_scaling method of the DataPreProcessor class 
+INFO:2021-11-23 17:38:10,729:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:38:10,742:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:38:10,742:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:38:10,742:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:38:10,744:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:38:10,744:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:38:10,744:Entered the feature_scaling method of the DataPreprocessor class
+ERROR:2021-11-23 17:38:10,746:Exception occurred in feature_scaling method of the DataPreProcessor class. Exception message:could not convert string to float: 'Female'
+INFO:2021-11-23 17:38:10,746:Feature scaling unsuccessful. Exited the feature_scaling method of the DataPreProcessor class 
+INFO:2021-11-23 17:38:39,312:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:38:39,325:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:38:39,325:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:38:39,325:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:38:39,326:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:38:39,326:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:39:03,999:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:39:04,011:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:39:04,011:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:39:04,011:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:39:04,012:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:39:04,013:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:44:48,729:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:44:48,743:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:44:48,743:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:44:48,743:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:44:48,745:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:44:48,745:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:45:13,905:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:45:13,921:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:45:13,921:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:45:13,921:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:45:13,923:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:45:13,924:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:45:29,677:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:45:29,689:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 17:45:29,689:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 17:45:29,689:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 17:45:29,691:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 17:45:29,691:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 17:45:29,691:Entered the splitting_as_X_y method of the DataPreprocessor class
+INFO:2021-11-23 17:45:29,700:Splitting data into X and y is successful. Shapes of X_train is (1477, 16),y_train is (1477,), X_test is (634, 16) & the y_test is (634,)
+INFO:2021-11-23 17:45:29,701:Exited the train_test_splitting method of DataPreProcessor class
+INFO:2021-11-23 21:55:34,201:Entered the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 21:55:34,231:Data loaded successfully. Shape of the data is (2111, 17)
+INFO:2021-11-23 21:55:34,232:Exited the "fetch_data" method of the "DataLoad" class.
+INFO:2021-11-23 21:55:34,232:Entered the data_split method of the DataPreProcessor class
+INFO:2021-11-23 21:55:34,237:Train test split successful. The shape of train data set is (1477, 17) and the shape of test data set is (634, 17)
+INFO:2021-11-23 21:55:34,238:Exited the data_split method of the DataPreprocessor class 
+INFO:2021-11-23 21:55:34,238:Entered the feature_scaling method of the DataPreprocessor class
+ERROR:2021-11-23 21:55:34,240:Exception occurred in feature_scaling method of the DataPreProcessor class. Exception message:could not convert string to float: 'Female'
+INFO:2021-11-23 21:55:34,241:Feature scaling unsuccessful. Exited the feature_scaling method of the DataPreProcessor class 

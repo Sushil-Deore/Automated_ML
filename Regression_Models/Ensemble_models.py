@@ -6,9 +6,9 @@ from sklearn.ensemble import GradientBoostingRegressor
 from xgboost import XGBRegressor
 from sklearn.model_selection import RandomizedSearchCV
 import logging
-import warning
+import warnings
 
-warning.filterwarning('ignore')
+warnings.filterwarnings('ignore')
 
 # Configuring logging operations
 
@@ -73,11 +73,11 @@ class Ensemble_models:
 
             # displaying the best estimator
             print()
-            print('The best estimator for the Adaboost regressor is', rcv.best_estimator_)
+            print('The best estimator for the Adaboost regressor is', RCV.best_estimator_)
 
             # Feature importance by the Adaboost regressor
 
-            ADB_feature_imp = pd.DataFrame(ADB.feature_importance_,
+            ADB_feature_imp = pd.DataFrame(ADB.feature_importances_,
                                            index=self.X_train.columns,
                                            columns=['Feature_importance'])
 
@@ -91,7 +91,7 @@ class Ensemble_models:
 
             logging.info('Successfully built a model using Adaboost Regressor')
 
-            logging.inof('Exited the adaboost_regressor method of the Ensemble_models class')
+            logging.info('Exited the adaboost_regressor method of the Ensemble_models class')
 
             return ADB
 
@@ -200,7 +200,7 @@ class Ensemble_models:
                 'reg_lambda': [1, 4, 5, 10, 20, 50, 100, 200, 500, 800, 1000]}
 
             # instantiating RandomizedSearchCV
-            RCV = RandomizedSearchCV(estimator=xgbr,
+            RCV = RandomizedSearchCV(estimator=XGBR,
                                      param_distributions=params,
                                      n_iter=10,
                                      scoring='r2',
@@ -212,21 +212,21 @@ class Ensemble_models:
 
             print('Cross validation process for the XGBoost regressor')
 
-            rcv.fit(self.x_train, self.y_train)  # Fitting on the train data
+            RCV.fit(self.X_train, self.y_train)  # Fitting on the train data
             print()
 
             # displaying the best estimator
-            print(f'The best estimator for the XGBoost regressor is {rcv.best_estimator_}')
+            print(f'The best estimator for the XGBoost regressor is {RCV.best_estimator_}')
 
             # Building the best estimator recommended by the randomized search CV as the final XGBoosting regressor.
-            XGBR = rcv.best_estimator_
+            XGBR = RCV.best_estimator_
 
             # Fitting on train data
             XGBR.fit(self.X_train, self.y_train)
 
             # Feature importance by the XGBoosting regressor
             XGBR_feature_imp = pd.DataFrame(XGBR.feature_importances_,
-                                            index=self.x_train.columns,
+                                            index=self.X_train.columns,
                                             columns=['Feature_importance'])
 
             XGBR_feature_imp.sort_values(by='Feature_importance',

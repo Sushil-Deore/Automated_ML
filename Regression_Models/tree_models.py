@@ -3,11 +3,11 @@
 import pandas as pd
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
-from sklean.model_selection import RandomizedSearchCV
+from sklearn.model_selection import RandomizedSearchCV
 import logging
 import warnings
 
-warnings.filterwarning('ignore')
+warnings.filterwarnings('ignore')
 
 # Configuring logging operations
 logging.basicConfig(filename='Tree_model_development_logs.log', level=logging.INFO,
@@ -90,7 +90,7 @@ class Tree_models_regression:
 
             # Feature importance by the Decision Tree regressor
 
-            df_feature_imp = pd.DataFrame(df.feature_importances_,
+            df_feature_imp = pd.DataFrame(dt.feature_importances_,
                                           index=self.X_train.columns,
                                           columns=['Feature_importance'])
 
@@ -158,7 +158,7 @@ class Tree_models_regression:
 
             # displaying the best estimator
             print()
-            print(f'The best estimator for the Random forest regressor is {rcv.best_estimator_}')
+            print(f'The best estimator for the Random forest regressor is {RCV.best_estimator_}')
 
             # Building the best estimator recommended by the randomized search CV as the final random forest regressor.
             RF = RCV.best_estimator_
@@ -180,7 +180,7 @@ class Tree_models_regression:
 
             # logging operation
             logging.info('Successfully built a model using Random forest Regressor')
-            logging.ingo('Exited the random_forest_regressor method of the Tree_models_regression class')
+            logging.info('Exited the random_forest_regressor method of the Tree_models_regression class')
 
             return RF
 

@@ -1,6 +1,5 @@
 # Importing Packages
 
-import pandas as pd
 import logging
 import warnings
 
@@ -26,8 +25,8 @@ class Model_Prediction:
         self.model = model
         self.X = X
 
-    @property
-    def model_prediction(self, model, X):
+    @staticmethod
+    def model_prediction(model, X):
 
         try:
             prediction = model.predict(X)
@@ -36,8 +35,8 @@ class Model_Prediction:
 
         except Exception as e:
             # logging operation
-            logging.error('Exception occurred in "model_predict" method of the TreeModelsReg class. Exception '
+            logging.error('Exception occurred in "model_predict" method of the Model_Prediction class. Exception '
                           'message:' + str(e))
 
             logging.info('"model_predict" method unsuccessful. Exited the "model_predict" method of the '
-                         'TreeModelsReg class ')
+                         'Model_Prediction class ')
